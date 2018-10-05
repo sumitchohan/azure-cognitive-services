@@ -2,8 +2,8 @@ from azure.cognitiveservices.vision.customvision.training import training_api
 from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateEntry, Region
 
 # Replace with a valid key
-training_key = "91a5eb611da14179a318682958a2a3b5"
-prediction_key = "d1cb98b527624f14a4927d14a19b52be"
+training_key = "f4d849d78e084dabbce02f9e4a6bf1db"
+prediction_key = "332849ac94ef494196cb95bd6cdbe16d"
 
 trainer = training_api.TrainingApi(training_key)
 
