@@ -12,7 +12,7 @@ obj_detection_domain = next(domain for domain in trainer.get_domains() if domain
 
 # Create a new project
 print ("Creating project...")
-project = trainer.get_project("My Detection Project", domain_id=obj_detection_domain.id)
+project = trainer.create_project("My Detection Project", domain_id=obj_detection_domain.id)
 # Make two tags in the new project
 fork_tag = trainer.create_tag(project.id, "fork")
 scissors_tag = trainer.create_tag(project.id, "scissors")
