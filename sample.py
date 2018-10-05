@@ -82,7 +82,9 @@ for file_name in scissors_image_regions.keys():
         tagged_images_with_regions.append(ImageFileCreateEntry(name=file_name, contents=image_contents.read(), regions=regions))
 
 
-trainer.create_images_from_files(project.id, images=tagged_images_with_regions)import time
+trainer.create_images_from_files(project.id, images=tagged_images_with_regions)
+
+import time
 
 print ("Training...")
 iteration = trainer.train_project(project.id)
